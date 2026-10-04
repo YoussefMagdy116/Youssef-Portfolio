@@ -10,8 +10,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { profile } from "@/data/portfolio";
 
-// TODO: point metadataBase at the real deployed domain for correct OG URLs.
-const siteUrl = new URL("https://youssef-cyber-portfolio.vercel.app");
+// Public URL of the deployed site (GitHub Pages). Update if you move
+// to a custom domain or another host.
+const siteUrl = new URL("https://youssefmagdy116.github.io/Youssef-Portfolio");
 
 const inter = Inter({
   subsets: ["latin"],

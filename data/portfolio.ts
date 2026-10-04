@@ -26,8 +26,12 @@ export const profile = {
   ],
 };
 
-/** Path to the CV inside /public — replace the file to update the CV. */
-export const cvPath = "/Youssef_CV.pdf";
+/**
+ * Path to the CV inside /public — replace the file to update the CV.
+ * The base path is set at build time for GitHub Pages deploys.
+ */
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+export const cvPath = `${basePath}/Youssef_CV.pdf`;
 
 export const contact = {
   email: "Youssefmagdyy5@gmail.com",
